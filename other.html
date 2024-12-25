@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adomas Juška Portfolio</title>
+    <title>Other (UPDATED)</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -69,16 +69,6 @@
             max-width: 800px;
             margin: auto;
         }
-        .list-item {
-            margin: 10px 0;
-        }
-        .list-item a {
-            color: #000;
-            text-decoration: none;
-        }
-        .list-item a:hover {
-            text-decoration: underline;
-        }
     </style>
 </head>
 <body>
@@ -87,19 +77,43 @@
             <ul>
                 <li><a href="adomas.html">Adomas Juška</a></li>
                 <li><a href="works.html">Works</a></li>
-                <li><a href="other.html">Other</a></li> 
+                <li><a href="other.html">Other</a></li>
             </ul>
         </div>
         <div class="sub-bar">
-            <ul>
+            <ul id="sub-menu">
                 <!-- Sub-bar items will dynamically change based on the section -->
             </ul>
         </div>
     </nav>
 
-    <section id="adomas">
-        <h1>Welcome to Adomas Juška's Portfolio</h1>
-        <p>This site features information about Adomas Juška, his works, and achievements.</p>
+    <section>
+        <h1>Other</h1>
+        <p>This is the landing page for the "Other" section. Use the sub-menu above to navigate.</p>
     </section>
+
+    <script>
+        const currentPage = "other"; // Set this dynamically based on the page
+
+        const subMenuItems = {
+            "other": [
+                { name: "Interviews", link: "interviews.html" },
+                { name: "Reviews", link: "reviews.html" },
+                { name: "Creative Projects", link: "creative-projects.html" }
+            ]
+        };
+
+        const subMenu = document.getElementById("sub-menu");
+        if (subMenuItems[currentPage]) {
+            subMenuItems[currentPage].forEach(item => {
+                const li = document.createElement("li");
+                const a = document.createElement("a");
+                a.href = item.link;
+                a.textContent = item.name;
+                li.appendChild(a);
+                subMenu.appendChild(li);
+            });
+        }
+    </script>
 </body>
 </html>
