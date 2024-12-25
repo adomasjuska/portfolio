@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adomas Juška Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+            color: #000;
+        }
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #000;
+            color: #fff;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 100px 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+        .subsection {
+            margin-top: 20px;
+        }
+        .works-title {
+            cursor: pointer;
+            margin: 10px 0;
+            font-weight: bold;
+        }
+        .work-details {
+            display: none;
+            margin-top: 10px;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        .gallery img {
+            width: 100px;
+            height: auto;
+        }
+        .video {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div>Adomas Juška</div>
+        <div>
+            <a href="#adomas">Adomas Juška</a>
+            <a href="#works">Works</a>
+        </div>
+    </nav>
+
+    <section id="adomas">
+        <h1>Adomas Juška</h1>
+        <div class="subsection">
+            <h2>Contacts</h2>
+            <p>Email: adomas.juska@example.com</p>
+            <p>Phone: +370-XXX-XXXX</p>
+        </div>
+        <div class="subsection">
+            <h2>Biography</h2>
+            <p>[Insert biography text here]</p>
+        </div>
+        <div class="subsection">
+            <h2>Interviews</h2>
+            <ul>
+                <li><a href="#">Interview 1</a></li>
+                <li><a href="#">Interview 2</a></li>
+            </ul>
+        </div>
+        <div class="subsection">
+            <h2>Reviews</h2>
+            <p>[Insert reviews here]</p>
+        </div>
+        <div class="subsection">
+            <h2>Awards, Festivals, Workshops</h2>
+            <ul>
+                <li>Award 1</li>
+                <li>Festival 1</li>
+            </ul>
+        </div>
+        <div class="subsection">
+            <h2>Other Things I'm Proud Of</h2>
+            <p>[Insert achievements here]</p>
+        </div>
+    </section>
+
+    <section id="works">
+        <h1>Works</h1>
+        <div>
+            <div class="works-title" onclick="toggleDetails('work1')">Play Title 1</div>
+            <div class="work-details" id="work1">
+                <p>Description of Play Title 1.</p>
+                <div class="gallery">
+                    <img src="placeholder.jpg" alt="Photo 1">
+                    <img src="placeholder.jpg" alt="Photo 2">
+                </div>
+                <div class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/example" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function toggleDetails(id) {
+            const details = document.getElementById(id);
+            if (details.style.display === "none" || details.style.display === "") {
+                details.style.display = "block";
+            } else {
+                details.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
