@@ -5,8 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interviews</title>
     <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS -->
+    <style>
+        .interviews {
+            margin: 20px auto;
+            max-width: 800px;
+            font-family: Arial, sans-serif;
+        }
+        .interview-group {
+            margin-bottom: 30px;
+        }
+        .interview-group h2 {
+            margin: 0 0 10px 0;
+            font-size: 1.5em;
+            color: #333;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 5px;
+        }
+        .interview {
+            margin: 10px 0;
+        }
+        .interview a {
+            text-decoration: none;
+            color: #007BFF;
+        }
+        .interview a:hover {
+            text-decoration: underline;
+        }
+        .interview p {
+            margin: 5px 0;
+            font-size: 0.9em;
+            color: #555;
+        }
+    </style>
 </head>
-<body data-page="other"> <!-- Add a `data-page` attribute for JavaScript -->
+<body data-page="other">
     <nav>
         <div class="top-bar">
             <ul>
@@ -22,7 +54,52 @@
 
     <section>
         <h1>Interviews</h1>
-        <p>Interviews with Adomas Juška will be displayed here.</p>
+        <div class="interviews">
+            <!-- TEXT Interviews -->
+            <div class="interview-group">
+                <h2>Text Interviews</h2>
+                <div class="interview">
+                    <p><a href="https://www.lrt.lt/naujienos/kultura/12/1133319/premjera-jaunimo-teatre-pristatantis-rezisierius-adomas-juska-megstu-viska-daryti-nuo-nulio" target="_blank">Adomas Juška about his newest play: I like to do everything from scratch</a> (2019)</p>
+                </div>
+                <div class="interview">
+                    <p><a href="https://www.delfi.lt/kultura/naujienos/adomas-juska-atsisakyti-literaturos-galbut-buvo-mano-savotiskas-teatrinis-maistas-91152437" target="_blank">Adomas Juška: to abandon literature was my own theatrical revolt</a> (2022)</p>
+                </div>
+                <div class="interview">
+                    <p><a href="https://www.15min.lt/kultura/naujiena/teatras/adomas-juska-akistata-su-tuscia-juoda-erdve-vienas-baisiausiu-dalyku-menininkui-283-1927150" target="_blank">Adomas Juška: A meeting with an empty black space is one of the scariest things for an artist</a> (2022)</p>
+                </div>
+                <div class="interview">
+                    <p><a href="https://www.atviraklaipeda.lt/2023/08/11/adomas-juska-kai-patogu-zmogaus-prigimtis-snaudzia/" target="_blank">Adomas Juška: when it’s comfortable, a person’s inner nature sleeps</a> (2023)</p>
+                </div>
+                <div class="interview">
+                    <p><a href="https://www.15min.lt/kultura/naujiena/teatras/klaipedos-gimsta-spektaklis-vakaru-krantine-sujungs-8-istorijas-283-2071188" target="_blank">Premiere in Klaipėda: „West Pier“ will combine 8 stories</a> (2023)</p>
+                </div>
+            </div>
+
+            <!-- AUDIO Interviews -->
+            <div class="interview-group">
+                <h2>Audio Interviews</h2>
+                <div class="interview">
+                    <p><a href="https://www.lrt.lt/mediateka/irasas/2000182867/uzkulisiai-teatro-rezisierius-adomas-juska-valstybiniame-jaunimo-teatre" target="_blank">Behind the scenes. Theatre Director Adomas Juška</a> (2020)</p>
+                </div>
+                <div class="interview">
+                    <p><a href="https://www.lrt.lt/mediateka/irasas/2000237351/pirmas-sakinys-adomas-juska-rezisuoti-literatura" target="_blank">The first sentence. Directing Literature. Adomas Juška</a> (2021)</p>
+                </div>
+                <div class="interview">
+                    <p><a href="https://www.lrt.lt/mediateka/irasas/2000141397/performansas-su-nekrosiumi-lyginamas-juska-reikejo-kaip-nors-pateikti-studenta-kad-ziurovai-eitu-i-jo-spektaklius" target="_blank">Performance. Adomas Juška on comparisons with Nekrošius</a> (2022)</p>
+                </div>
+            </div>
+
+            <!-- VIDEO Interviews -->
+            <div class="interview-group">
+                <h2>Video Interviews</h2>
+                <div class="interview">
+                    <p><a href="https://www.lrt.lt/mediateka/irasas/2000294205/vizionieriai-teatras-rezisierius-adomas-juska" target="_blank">Visionaries. Theatre. Director Adomas Juška</a> (2023)</p>
+                </div>
+                <div class="interview">
+                    <p><a href="https://www.delfi.lt/video/laidos/artimai/artimai-rezisierius-adomas-juska-kviecia-kitaip-pazvelgti-i-don-kichota-87039065" target="_blank">Director Adomas Juška invites audience view „Don Quixote in a new light“</a> (2023)</p>
+                </div>
+            </div>
+        </div>
     </section>
 
     <script src="scripts.js"></script> <!-- Link to external JavaScript -->
