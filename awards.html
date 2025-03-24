@@ -4,9 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Awards, Festivals, Workshops</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .entries {
+            margin: 20px auto;
+            max-width: 800px;
+            font-family: Arial, sans-serif;
+        }
+        .entry-group {
+            margin-bottom: 30px;
+        }
+        .entry-group h2 {
+            margin: 0 0 10px 0;
+            font-size: 1.5em;
+            color: #333;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 5px;
+        }
+        .entry {
+            margin: 10px 0;
+        }
+        .entry p {
+            margin: 5px 0;
+            font-size: 0.9em;
+            color: #555;
+        }
+    </style>
 </head>
-<body data-page="adomas"> <!-- Add a `data-page` attribute for JavaScript -->
+<body data-page="adomas">
     <nav>
         <div class="top-bar">
             <ul>
@@ -22,9 +47,38 @@
 
     <section>
         <h1>Awards, Festivals, Workshops</h1>
-        <p>Details about awards, festivals, and workshops attended by Adomas Juška will be displayed here.</p>
+        <div class="entries">
+
+            <!-- Awards -->
+            <div class="entry-group">
+                <h2>Awards</h2>
+                <div class="entry">
+                    <p>2023 – Golden Cross of the Stage for Best Director – <em>West Pier</em></p>
+                    <p>[Add more awards here as needed]</p>
+                </div>
+            </div>
+
+            <!-- Festivals -->
+            <div class="entry-group">
+                <h2>Festivals</h2>
+                <div class="entry">
+                    <p>2023 – Featured at XYZ International Theatre Festival – <em>West Pier</em></p>
+                    <p>[Add more festivals here as needed]</p>
+                </div>
+            </div>
+
+            <!-- Workshops -->
+            <div class="entry-group">
+                <h2>Workshops</h2>
+                <div class="entry">
+                    <p>2022 – Workshop on physical theatre, Vilnius Academy of Arts</p>
+                    <p>[Add more workshops here as needed]</p>
+                </div>
+            </div>
+
+        </div>
     </section>
 
-    <script src="scripts.js"></script> <!-- Link to external JavaScript -->
+    <script src="scripts.js"></script>
 </body>
 </html>
