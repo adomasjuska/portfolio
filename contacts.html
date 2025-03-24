@@ -3,10 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacts</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS -->
+    <title>Contact</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .contact {
+            margin: 20px auto;
+            max-width: 800px;
+            font-family: Arial, sans-serif;
+        }
+        .contact h2 {
+            font-size: 1.2em;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        .contact p {
+            font-size: 0.95em;
+            color: #555;
+            margin-bottom: 10px;
+        }
+        .contact a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        .contact a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
-<body data-page="adomas"> <!-- Add a `data-page` attribute for JavaScript -->
+<body data-page="adomas">
     <nav>
         <div class="top-bar">
             <ul>
@@ -21,10 +46,16 @@
     </nav>
 
     <section>
-        <h1>Contacts</h1>
-        <p>Contact information for Adomas Juška.</p>
+        <h1>Contact</h1>
+        <div class="contact">
+            <h2>Email</h2>
+            <p><a href="mailto:adomasjuska1@gmail.com">adomasjuska1@gmail.com</a></p>
+
+            <h2>Facebook</h2>
+            <p><a href="https://www.facebook.com/adomas26/" target="_blank">https://www.facebook.com/adomas26/</a></p>
+        </div>
     </section>
 
-    <script src="scripts.js"></script> <!-- Link to external JavaScript -->
+    <script src="scripts.js"></script>
 </body>
 </html>
