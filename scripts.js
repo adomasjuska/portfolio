@@ -13,7 +13,7 @@ const subMenuItems = {
     other: [
         { name: "Interviews", link: "interviews.html" },
         { name: "Reviews", link: "reviews.html" },
-        { name: "Creative Projects", link: "creative-projects.html" }
+        { name: "Other projects", link: "other-projects.html" }
     ]
 };
 
