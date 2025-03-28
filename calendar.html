@@ -1,30 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calendar</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Calendar</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .calendar {
+      margin: 20px auto;
+      max-width: 800px;
+      font-family: Arial, sans-serif;
+    }
+    .calendar-entry {
+      margin: 20px 0;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #ccc;
+    }
+    .calendar-entry h3 {
+      margin: 0;
+      font-size: 1.1em;
+      color: #000;
+    }
+    .calendar-entry p {
+      margin: 5px 0;
+      font-size: 0.9em;
+      color: #555;
+    }
+  </style>
 </head>
-<body data-page="works"> <!-- Add a `data-page` attribute for JavaScript -->
-    <nav>
-        <div class="top-bar">
-            <ul>
-                <li><a href="adomas.html">Adomas Juška</a></li>
-                <li><a href="works.html">Works</a></li>
-                <li><a href="other.html">Other</a></li>
-            </ul>
-        </div>
-        <div class="sub-bar">
-            <ul id="sub-menu"></ul>
-        </div>
-    </nav>
+<body data-page="works">
+  <nav>
+    <div class="top-bar">
+      <ul>
+        <li><a href="adomas.html">Adomas Juška</a></li>
+        <li><a href="works.html">Works</a></li>
+        <li><a href="other.html">Other</a></li>
+      </ul>
+    </div>
+    <div class="sub-bar">
+      <ul id="sub-menu"></ul>
+    </div>
+  </nav>
 
-    <section>
-        <h1>Calendar</h1>
-        <p>Upcoming events and calendar details for Adomas Juška will appear here.</p>
-    </section>
+  <section>
+    <h1>Spring of 2025</h1>
+    <div class="calendar">
 
-    <script src="scripts.js"></script> <!-- Link to external JavaScript -->
+        <h2>Tour Performances</h2>
+
+         <div class="calendar-entry">
+        <h3>Brother of Sleep</h3>
+        <p><strong>Date:</strong> April 2 </p>
+        <p><strong>Venue:</strong> Molėtai Centre of Culture, Molėtai</p>
+        <p><strong>Tickets:</strong> <a href="https://www.infomoletai.lt/renginys/valstybinio-jaunimo-teatro-spektaklis-miego-brolis/" target="_blank">Link</a></p>
+
+        <h2>Regular Performances</h2>
+
+              <div class="calendar-entry">
+        <h3>Melancholy of Resistance</h3>
+        <p><strong>Date:</strong> April 5, 6 & May 11 </p>
+        <p><strong>Venue:</strong> Juozas Miltinis Drama Theatre, Panevėžys</p>
+        <p><strong>Tickets:</strong> <a href="https://www.miltinioteatras.lt/spektaklis/spektakliai/visi/priesinimosi-melancholija/"_blank">Link</a></p>
+      </div>
+
+      <div class="calendar-entry">
+        <h3>West Pier</h3>
+        <p><strong>Date:</strong> March 7, 8 </p>
+        <p><strong>Venue:</strong> Klaipėda Drama Theatre, Klaipėda</p>
+        <p><strong>Tickets:</strong> <a href="https://kdt.lt/renginiai/vakaru-krantine/" target="_blank">Link</a></p>
+      </div>
+
+        <div class="calendar-entry">
+        <h3>Gouache</h3>
+        <p><strong>Date:</strong> TBA </p>
+        <p><strong>Venue:</strong> State Youth Theatre, Vilnius</p>
+        <p><strong>Tickets:</strong> <a href="https://jaunimoteatras.lt/spektakliai/guasas/" target="_blank">Link</a></p>
+      </div>
+
+        <div class="calendar-entry">
+        <h3>Don Quixote</h3>
+        <p><strong>Date:</strong> April 30 </p>
+        <p><strong>Venue:</strong> State Youth Theatre, Vilnius</p>
+        <p><strong>Tickets:</strong> <a href="https://jaunimoteatras.lt/spektakliai/don-kichotas/" target="_blank">Link</a></p>
+      </div>
+
+        <div class="calendar-entry">
+        <h3>Brother of Sleep</h3>
+        <p><strong>Date:</strong> June 4 </p>
+        <p><strong>Venue:</strong> State Youth Theatre, Vilnius</p>
+        <p><strong>Tickets:</strong> <a href="https://jaunimoteatras.lt/spektakliai/miego-brolis/" target="_blank">Link</a></p>
+
+        <div class="calendar-entry">
+        <h3>Švejk</h3>
+        <p><strong>Date:</strong> TBA </p>
+        <p><strong>Venue:</strong> State Youth Theatre, Vilnius</p>
+        <p><strong>Tickets:</strong> <a href="https://jaunimoteatras.lt/spektakliai/sveikas/" target="_blank">Link</a></p>
+
+            
+            
+      </div>
+
+    </div>
+  </section>
+
+  <script src="scripts.js"></script>
 </body>
 </html>
