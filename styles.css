@@ -71,26 +71,53 @@ section {
     margin: auto;
 }
 
-<!-- Main Menu -->
-<div class="main-menu">
-  <a href="index.html">Adomas Juska</a>
-  <a href="works.html">Works</a>
-  <a href="other.html">Other</a>
-</div>
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  color: black;
+  text-align: center;
+}
 
-<!-- Submenu (example for Adomas Juska page) -->
-<div class="submenu">
-  <a href="contacts.html">Contacts</a>
-  <a href="biography.html">Biography</a>
-  <span>
-    <a href="awards.html">Awards</a>,
-    <a href="festivals.html">Festivals</a>,
-    <a href="workshops.html">Workshops</a>
-  </span>
-</div>
+.main-menu {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 85px;
+  left: 444px;
+  right: 444px;
+  font-size: 50pt;
+  text-decoration: none;
+  background: none;
+  color: black;
+}
 
-<!-- Page Content -->
-<div class="content">
-  <!-- Your content here -->
-</div>
+.submenu {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 180px;
+  left: 530px;
+  right: 530px;
+  font-size: 25pt;
+  text-decoration: none;
+  background: none;
+  color: black;
+}
+
+.content {
+  margin-top: 290px;
+  padding: 0 444px;
+  text-align: center;
+}
+
+/* Remove hover colors */
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  color: black;
+}
 
