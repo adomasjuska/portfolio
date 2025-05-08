@@ -12,6 +12,7 @@ body {
     display: flex;
     flex-direction: column;  /* Stack the main menu and submenu vertically */
     align-items: center;     /* Center-align them */
+    width: 100%;
 }
 
 /* Main Menu */
@@ -21,8 +22,7 @@ body {
     width: calc(100% - 888px);  /* To keep the 444px border on each side */
     font-size: 50pt;
     color: black;
-    position: absolute;
-    top: 85px;
+    margin-top: 85px;  /* Offset from the top by 85px */
 }
 
 .main-menu a {
@@ -41,8 +41,7 @@ body {
     width: calc(100% - 1060px);  /* To keep the 530px border on each side */
     font-size: 25pt;
     color: black;
-    position: absolute;
-    top: 180px;
+    margin-top: 180px;  /* Offset from the top by 180px */
 }
 
 .submenu a {
