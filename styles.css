@@ -70,3 +70,27 @@ section {
     max-width: 800px;
     margin: auto;
 }
+
+<!-- Main Menu -->
+<div class="main-menu">
+  <a href="index.html">Adomas Juska</a>
+  <a href="works.html">Works</a>
+  <a href="other.html">Other</a>
+</div>
+
+<!-- Submenu (example for Adomas Juska page) -->
+<div class="submenu">
+  <a href="contacts.html">Contacts</a>
+  <a href="biography.html">Biography</a>
+  <span>
+    <a href="awards.html">Awards</a>,
+    <a href="festivals.html">Festivals</a>,
+    <a href="workshops.html">Workshops</a>
+  </span>
+</div>
+
+<!-- Page Content -->
+<div class="content">
+  <!-- Your content here -->
+</div>
+
