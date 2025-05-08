@@ -5,25 +5,25 @@ body {
     padding: 0;
     background-color: #fff;
     color: #000;
+    text-align: center;
 }
 
 /* Wrapper for Main Menu and Submenu */
 .nav-wrapper {
     display: flex;
-    flex-direction: column;  /* Stack the main menu and submenu vertically */
-    align-items: center;     /* Center-align them */
-    width: 100%;
+    flex-direction: column; /* Stack the main menu and submenu vertically */
+    align-items: center;    /* Center-align them */
 }
 
 /* Main Menu */
 .main-menu {
     display: flex;
-    justify-content: space-between;
-    width: calc(100% - 888px);  /* 444px left + 444px right border */
+    justify-content: space-between;  /* Space out items */
+    width: calc(100% - 888px);       /* 444px left + 444px right border */
     font-size: 50pt;
     color: black;
     margin-top: 85px;  /* Offset from the top by 85px */
-    position: relative;
+    text-align: center; /* Center text horizontally */
 }
 
 .main-menu a {
@@ -39,12 +39,12 @@ body {
 /* Submenu */
 .submenu {
     display: flex;
-    justify-content: space-between;
-    width: calc(100% - 1060px);  /* 530px left + 530px right border */
+    justify-content: space-between; /* Space out items */
+    width: calc(100% - 1060px);     /* 530px left + 530px right border */
     font-size: 25pt;
     color: black;
-    margin-top: 180px;  /* Offset from the top by 180px */
-    position: relative;
+    margin-top: 180px; /* Offset from the top by 180px */
+    text-align: center; /* Center text horizontally */
 }
 
 .submenu a {
@@ -60,7 +60,7 @@ body {
 /* Content Section */
 .content {
     margin-top: 290px;
-    padding: 0 444px;
+    padding: 0 444px; /* Add 444px padding to center content */
     text-align: center;
 }
 
