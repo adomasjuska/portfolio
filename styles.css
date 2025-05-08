@@ -19,15 +19,17 @@ body {
 .main-menu {
     display: flex;
     justify-content: space-between;
-    width: calc(100% - 888px);  /* To keep the 444px border on each side */
+    width: calc(100% - 888px);  /* 444px left + 444px right border */
     font-size: 50pt;
     color: black;
     margin-top: 85px;  /* Offset from the top by 85px */
+    position: relative;
 }
 
 .main-menu a {
     text-decoration: none;
     color: black;
+    margin: 0 20px; /* Space between menu items */
 }
 
 .main-menu a:hover {
@@ -38,15 +40,17 @@ body {
 .submenu {
     display: flex;
     justify-content: space-between;
-    width: calc(100% - 1060px);  /* To keep the 530px border on each side */
+    width: calc(100% - 1060px);  /* 530px left + 530px right border */
     font-size: 25pt;
     color: black;
     margin-top: 180px;  /* Offset from the top by 180px */
+    position: relative;
 }
 
 .submenu a {
     text-decoration: none;
     color: black;
+    margin: 0 20px; /* Space between submenu items */
 }
 
 .submenu a:hover {
