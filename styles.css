@@ -5,31 +5,35 @@ body {
     padding: 0;
     background-color: #fff;
     color: #000;
-    text-align: center;
+    text-align: center; /* Center text and content */
 }
 
 /* Wrapper for Main Menu and Submenu */
-.nav-wrapper {
-    display: flex;
-    flex-direction: column; /* Stack the main menu and submenu vertically */
-    align-items: center;    /* Center-align them */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #000;
+    color: #fff;
 }
 
 /* Main Menu */
 .main-menu {
     display: flex;
-    justify-content: space-between;  /* Space out items */
-    width: calc(100% - 888px);       /* 444px left + 444px right border */
+    justify-content: space-between; /* Space out the menu items (Adomas Juska, Works, Other) */
+    width: calc(100% - 888px);  /* To keep 444px invisible border on each side */
     font-size: 50pt;
     color: black;
-    margin-top: 85px;  /* Offset from the top by 85px */
-    text-align: center; /* Center text horizontally */
+    position: absolute;
+    top: 85px;
+    left: 444px;
+    right: 444px;
 }
 
 .main-menu a {
     text-decoration: none;
     color: black;
-    margin: 0 20px; /* Space between menu items */
 }
 
 .main-menu a:hover {
@@ -39,18 +43,19 @@ body {
 /* Submenu */
 .submenu {
     display: flex;
-    justify-content: space-between; /* Space out items */
-    width: calc(100% - 1060px);     /* 530px left + 530px right border */
+    justify-content: space-between; /* Space out the submenu items */
+    width: calc(100% - 1060px);  /* To keep 530px invisible border on each side */
     font-size: 25pt;
     color: black;
-    margin-top: 180px; /* Offset from the top by 180px */
-    text-align: center; /* Center text horizontally */
+    position: absolute;
+    top: 180px;
+    left: 530px;
+    right: 530px;
 }
 
 .submenu a {
     text-decoration: none;
     color: black;
-    margin: 0 20px; /* Space between submenu items */
 }
 
 .submenu a:hover {
@@ -60,11 +65,11 @@ body {
 /* Content Section */
 .content {
     margin-top: 290px;
-    padding: 0 444px; /* Add 444px padding to center content */
+    padding: 0 444px;
     text-align: center;
 }
 
-/* Links */
+/* Remove hover colors */
 a {
     color: black;
     text-decoration: none;
@@ -73,4 +78,3 @@ a {
 a:hover {
     color: black;
 }
-
