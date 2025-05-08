@@ -1,50 +1,69 @@
+/* Global Styles */
 body {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-  color: black;
-  text-align: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #000;
 }
 
+/* Main Menu */
 .main-menu {
-  display: flex;
-  justify-content: space-between;
-  position: absolute;
-  top: 85px;
-  left: 444px;
-  right: 444px;
-  font-size: 50pt;
-  text-decoration: none;
-  background: none;
-  color: black;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 85px;
+    left: 444px;
+    right: 444px;
+    font-size: 50pt;
+    color: black;
 }
 
+.main-menu a {
+    text-decoration: none;
+    color: black;
+}
+
+.main-menu a:hover {
+    text-decoration: underline;
+}
+
+/* Submenu */
 .submenu {
-  display: flex;
-  justify-content: space-between;
-  position: absolute;
-  top: 180px;
-  left: 530px;
-  right: 530px;
-  font-size: 25pt;
-  text-decoration: none;
-  background: none;
-  color: black;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 180px;
+    left: 530px;
+    right: 530px;
+    font-size: 25pt;
+    color: black;
 }
 
+.submenu a {
+    text-decoration: none;
+    color: black;
+}
+
+.submenu a:hover {
+    text-decoration: underline;
+}
+
+/* Content */
 .content {
-  margin-top: 290px;
-  padding: 0 444px;
-  text-align: center;
+    margin-top: 290px;
+    padding: 0 444px;
+    text-align: center;
 }
 
+/* Link Styling */
 a {
-  color: black;
-  text-decoration: none;
+    color: black;
+    text-decoration: none;
 }
 
 a:hover {
-  color: black;
+    color: black;
 }
 
 
